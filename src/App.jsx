@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <main className='min-h-screen'>
+      <main>
         <MainSection />
         <StorySection />
       </main>

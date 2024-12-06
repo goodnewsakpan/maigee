@@ -3,7 +3,7 @@ import { MousePointer, ChefHat, Heart } from 'lucide-react';
 
 const StorySection = () => {
   return (
-    <section className="bg-white py-16 overflow-hidden">
+    <section className="bg-white py-16 overflow-hidden w-[95%] mx-auto">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         {/* Story Content */}
         <div className="space-y-6 animate-fade-in-left">

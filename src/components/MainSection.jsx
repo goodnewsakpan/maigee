@@ -4,10 +4,10 @@ import { ShoppingCart, ChevronRight } from 'lucide-react';
 
 const MainSection = () => {
   return (
-    <main className="bg-gray-50 min-h-screen pt-20">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Hero Content */}
+    <main className="bg-gray-50 min-h-screen pt-40 w-[95%] mx-auto ">
+      <div className="w-[85%] mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+        
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
               Savor Every Bite
