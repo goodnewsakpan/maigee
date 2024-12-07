@@ -6,7 +6,7 @@ const StorySection = () => {
     <section className="bg-white py-16 overflow-hidden w-[95%] mx-auto">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         {/* Story Content */}
-        <div className="space-y-6 animate-fade-in-left">
+        <div className="space-y-6 animate-fade-in-left border-3">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Our Culinary Journey
           </h2>
@@ -33,7 +33,7 @@ const StorySection = () => {
         <div className="relative animate-fade-in-right">
           <div className="absolute -inset-2 bg-gradient-to-r from-red-500 to-orange-400 rounded-lg blur-lg opacity-50"></div>
           <img 
-            src="/api/placeholder/500/600" 
+            src="/images/story_image.jpeg" 
             alt="Restaurant Interior" 
             className="relative z-10 rounded-lg shadow-xl transform transition hover:scale-105"
           />

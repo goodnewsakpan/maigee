@@ -16,8 +16,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-red-500 to-orange-400 text-white py-12">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <footer className=" bg-gradient-to-r from-red-500 to-orange-400 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
         {/* Restaurant Info */}
         <div>
           <h3 className="text-2xl font-bold mb-4">Delicious Eats</h3>
