@@ -30,20 +30,20 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex md:items-center md:space-x-12"> {/* Changed from space-x-6 to space-x-12 */}
+            <div className="hidden md:flex md:items-center md:space-x-12">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   to={item.to}
-                  className="text-white hover:text-gray-200 transition-colors duration-200 text-lg" // Added text-lg
+                  className="text-white hover:text-gray-200 transition-colors duration-200 text-lg"
                 >
                   {item.label}
                 </Link>
               ))}
-              <button className="bg-white text-red-600 px-6 py-2 rounded-full hover:bg-gray-100 transition-colors duration-200 flex items-center ml-4"> {/* Added ml-4 and increased px */}
+              <Link to="https://wa.me/2347035391412?text=Hello%20there%2C%20Welcome%20to%20My_gee%20kitchen." className="bg-white text-red-600 px-6 py-2 rounded-full hover:bg-gray-100 transition-colors duration-200 flex items-center ml-4">
                 <ShoppingCart className="mr-2" size={20} />
                 Order Now
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -60,24 +60,25 @@ const Navbar = () => {
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
             <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-3"> {/* Increased space-y-1 to space-y-3 */}
+              <div className="px-2 pt-2 pb-3 space-y-3">
                 {navItems.map((item) => (
                   <Link
                     key={item.label}
                     to={item.to}
-                    className="block px-3 py-3 text-white hover:bg-red-600 rounded-md transition-colors duration-200" // Increased py-2 to py-3
+                    className="block px-3 py-3 text-white hover:bg-red-600 rounded-md transition-colors duration-200"
                     onClick={toggleMenu}
                   >
                     {item.label}
                   </Link>
                 ))}
-                <button 
+                <Link 
+                  to="https://wa.me/2347035391412?text=Hello%20there%2C%20Welcome%20to%20My_gee%20kitchen."
                   className="w-full mt-2 bg-white text-red-600 px-4 py-3 rounded-full hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
                   onClick={toggleMenu}
                 >
                   <ShoppingCart className="mr-2" size={20} />
                   Order Now
-                </button>
+                </Link>
               </div>
             </div>
           )}
